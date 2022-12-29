@@ -1,0 +1,27 @@
+{
+  "name": "windowframe",
+  "version": "0.0.1",
+  "description": "Simple iFrame-based utility to enable web multi-framework web component isolation and event-based communication",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "debug": "webpack serve --config config/webpack.debug.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteolacchio/windowframe.git"
+  },
+  "author": "Matteo Lacchio, Davide Cambiaso",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/matteolacchio/windowframe/issues"
+  },
+  "homepage": "https://github.com/matteolacchio/windowframe#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
