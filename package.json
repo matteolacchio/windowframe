@@ -13,7 +13,7 @@
     "url": "git+https://github.com/matteolacchio/windowframe.git"
   },
   "author": "Matteo Lacchio, Davide Cambiaso",
-  "license": "AGPL-3.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/matteolacchio/windowframe/issues"
   },
