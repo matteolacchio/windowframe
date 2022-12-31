@@ -7,8 +7,12 @@ const webpack = require('webpack');
 const dist_directory = path.resolve(__dirname, '../dist');
 
 new Promise((resolve, reject) => {
-    console.log('Cleaning up previous dist directory');
-    fs.rm(dist_directory, { recursive: true }, (error) => error ? reject(error) : resolve());
+    if(fs.existsSync(dist_directory)){
+        console.log('Cleaning up previous dist directory');
+        fs.rm(dist_directory, { recursive: true }, (error) => error ? reject(error) : resolve());
+    }else{
+        resolve();
+    }    
 }).then(() => new Promise((resolve, reject) => {
     console.log('Starting webpack');
     webpack(config).run((error, result) => (error) ? reject(error) : resolve(result));
