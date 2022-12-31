@@ -1,12 +1,14 @@
 {
-  "name": "windowframe",
-  "version": "0.0.1",
+  "name": "@matteolacchio/windowframe",
+  "version": "0.0.2",
   "description": "Simple iFrame-based utility to enable web multi-framework web component isolation and event-based communication",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "debug": "webpack serve --config config/webpack.debug.js"
+    "debug": "webpack serve --config build/config/webpack.debug.js",
+    "bundle": "node build/bundle.js",
+    "publish": "npm publish ./dist --access=public"
   },
   "repository": {
     "type": "git",

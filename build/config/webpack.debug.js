@@ -1,8 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const dev_directory = path.resolve(__dirname, '../development');
-const debug_directory = path.resolve(dev_directory, '/debug')
+const dev_directory = path.resolve(__dirname, '../../development');
+const debug_directory = path.resolve(dev_directory, '/debug');
 
 module.exports = {
   mode: 'development',
