@@ -1,6 +1,6 @@
 {
   "name": "@matteolacchio/windowframe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple iFrame-based utility to enable web multi-framework web component isolation and event-based communication",
   "directories": {
     "lib": "lib"
