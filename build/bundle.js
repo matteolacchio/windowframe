@@ -26,7 +26,8 @@ new Promise((resolve, reject) => {
         'author', 
         'license', 
         'bugs', 
-        'homepage'
+        'homepage',
+        'keywords'
     ];
     Object.keys(package).forEach((field) => { if(allowed_fields.indexOf(field) < 0) delete package[field] });
     fs.writeFile(
